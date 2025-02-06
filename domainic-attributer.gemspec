@@ -2,9 +2,8 @@
 
 DOMAINIC_ATTRIBUTER_GEM_VERSION = '0.2.0'
 DOMAINIC_ATTRIBUTER_SEMVER = '0.2.0'
-DOMAINIC_ATTRIBUTER_REPO_URL = 'https://github.com/domainic/domainic'
-DOMAINIC_ATTRIBUTER_HOME_URL = "#{DOMAINIC_ATTRIBUTER_REPO_URL}/tree/domainic-attributer-v" \
-                               "#{DOMAINIC_ATTRIBUTER_SEMVER}/domainic-attributer".freeze
+DOMAINIC_ATTRIBUTER_REPO_URL = 'https://github.com/domainic/domainic-attributer'
+DOMAINIC_ATTRIBUTER_HOME_URL = DOMAINIC_ATTRIBUTER_REPO_URL
 
 Gem::Specification.new do |spec|
   spec.name        = 'domainic-attributer'
@@ -28,12 +27,10 @@ Gem::Specification.new do |spec|
 
   spec.metadata = {
     'bug_tracker_uri' => "#{DOMAINIC_ATTRIBUTER_REPO_URL}/issues",
-    'changelog_uri' => "#{DOMAINIC_ATTRIBUTER_REPO_URL}/releases/tag/domainic-attributer-v" \
-                       "#{DOMAINIC_ATTRIBUTER_SEMVER}",
+    'changelog_uri' => "#{DOMAINIC_ATTRIBUTER_REPO_URL}/releases/tag/#{DOMAINIC_ATTRIBUTER_SEMVER}",
     'documentation_uri' => "https://rubydoc.info/gems/domainic-attributer/#{DOMAINIC_ATTRIBUTER_GEM_VERSION}",
     'homepage_uri' => DOMAINIC_ATTRIBUTER_HOME_URL,
     'rubygems_mfa_required' => 'true',
-    'source_code_uri' => "#{DOMAINIC_ATTRIBUTER_REPO_URL}/tree/domainic-attributer-v" \
-                         "#{DOMAINIC_ATTRIBUTER_SEMVER}/domainic-attributer"
+    'source_code_uri' => "#{DOMAINIC_ATTRIBUTER_REPO_URL}/tree/#{DOMAINIC_ATTRIBUTER_SEMVER}"
   }
 end
