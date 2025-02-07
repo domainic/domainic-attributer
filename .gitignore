@@ -3,13 +3,15 @@
 /.config
 /coverage/
 /InstalledFiles
+/logs/
+!/logs/.keep
 /pkg/
 /spec/reports/
 /spec/examples.txt
 /test/tmp/
 /test/version_tmp/
 /tmp/
-
+!/tmp/.keep
 # Used by dotenv library to load environment variables.
 # .env
 
@@ -54,3 +56,13 @@ build-iPhoneSimulator/
 
 # Used by RuboCop. Remote config files pulled in from inherit_from directive.
 # .rubocop-https?--*
+
+# RSpec generated files
+.rspec_status
+
+# RBS generated files
+/.gem_rbs_collection/
+
+# Version Manager Files
+mise.toml
+.tool-versions
